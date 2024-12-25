@@ -4,10 +4,10 @@
 
 <script  setup>
   const config = useRuntimeConfig()
+  console.log(config.apiBasePath)
 
-const { data, pending } = await useFetch(`/menu`, {
+const { data, pending } = await useFetch('http://127.0.0.1:8000/api'  + `/menu`, {
   lazy: true,
-  baseURL: config.apiBasePath,
   params: {
     format: "json",
   },
