@@ -13,13 +13,8 @@ export default {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Readex Pro', ...defaultTheme.fontFamily.sans],
-                      satoshi: ['Satoshi', 'sans-serif'],
-
-            },
+           
             scale: {
-                flip: '-1',
             },
             screens: {
                 xs: '375px',

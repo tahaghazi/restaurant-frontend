@@ -1,5 +1,7 @@
 <template>
-  <div class="container mx-auto px-6">
+    <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">    <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+
+<div class="container mx-auto px-6">
     <div class="h-64 rounded-md overflow-hidden bg-cover bg-center" style="background-image: url('/main/pizza.jpg');">
       <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
         <div class="px-10 max-w-xl">
@@ -43,13 +45,20 @@
       <h3 class="text-gray-600 text-2xl font-medium">Menu</h3>
       <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
         <Products/>
+        
       </div>
     </div>
+
   </div>
+  </div>
+  </section>
+  
 </template>
 
 <script lang="ts" setup>
 import { PlusSmIcon } from "@vue-hero-icons/outline";
+const router = useRouter();
+
 </script>
 
 <style></style>
